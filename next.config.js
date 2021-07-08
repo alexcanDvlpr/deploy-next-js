@@ -5,5 +5,5 @@ module.exports = {
     basePath: '',
     // Use the CDN in production and localhost for development.
     assetPrefix: isProd ? '/deploy-next-js/' : '',
-    prueba: process.env.PRUEBA_ENV
+    PRUEBA_ENV: process.env.PRUEBA_ENV
 }
