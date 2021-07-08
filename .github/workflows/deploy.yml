@@ -1,6 +1,3 @@
-# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: Tutorial Next.js Deploy CI/CD
 
 on:
@@ -17,7 +14,6 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v2
@@ -27,12 +23,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build
-        env:
-          PRUEBA_ENV: Hola Mundo
+      env:
+        PRUEBA_ENV: Hola Mundo
 
     - run: npm run export
-        env:
-          PRUEBA_ENV: Hola Mundo
+      env:
+        PRUEBA_ENV: Hola Mundo
 
     - run: touch ./out/.nojekyll
     
@@ -41,5 +37,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages # The branch the action should deploy to.
-        folder: out # The folder the action should deploy.
+        branch: gh-pages
+        folder: out
