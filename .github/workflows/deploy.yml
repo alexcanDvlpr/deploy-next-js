@@ -31,8 +31,8 @@ jobs:
           PRUEBA_ENV: Hola Mundo
 
     - run: npm run export
-      env:
-        PRUEBA_ENV: Hola Mundo
+        env:
+          PRUEBA_ENV: Hola Mundo
 
     - run: touch ./out/.nojekyll
     
