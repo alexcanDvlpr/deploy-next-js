@@ -27,7 +27,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build
+        env:
+          PRUEBA_ENV: Hola Mundo
+
     - run: npm run export
+      env:
+        PRUEBA_ENV: Hola Mundo
+
     - run: touch ./out/.nojekyll
     
     

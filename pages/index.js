@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import { Avatar, Wrap, WrapItem, Heading, Text, Container } from "@chakra-ui/react"
 
 export default function Home() {
+  const prueba = process.env.PRUEBA_ENV || 'No llegó nada';
   return (
     <div className={styles.container}>
       <Head>
@@ -19,6 +20,7 @@ export default function Home() {
         <Wrap>
           <WrapItem>
             <Avatar size="2xl" name="Dan Abrahmov" src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/12919651_1790398954516641_8703166132135731682_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=a9b1d2&_nc_ohc=4isL1eMrGAMAX_mBgGU&_nc_ht=scontent-mad1-1.xx&oh=4d62f58a3ad0316fef06bab052f3ef1e&oe=60ECC811" />
+            <Text mt={5}>{ prueba }</Text>
           </WrapItem>
         </Wrap>
       </main>
