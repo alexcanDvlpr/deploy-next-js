@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { Avatar, Wrap, WrapItem, Heading, Text, Container } from "@chakra-ui/react"
 
 export default function Home() {
   return (
@@ -12,57 +12,19 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <Heading my={5}>Next.js Tutorial Deploy con Github Actions en Github Pages</Heading>
+        <Container maxW="container.md">
+          <Text mb={5} align="center" fontSize="lg">El objetivo es, crear un proyecto base de Next.js y llegar a desplegarlo en Github Pages usando un repo de Github y usar CI/CD con GIthub Actions.</Text>
+          </Container>
+        <Wrap>
+          <WrapItem>
+            <Avatar size="2xl" name="Dan Abrahmov" src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/12919651_1790398954516641_8703166132135731682_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=a9b1d2&_nc_ohc=4isL1eMrGAMAX_mBgGU&_nc_ht=scontent-mad1-1.xx&oh=4d62f58a3ad0316fef06bab052f3ef1e&oe=60ECC811" />
+          </WrapItem>
+        </Wrap>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        Created with 💘 by Alexcan.dvlpr
       </footer>
     </div>
   )
