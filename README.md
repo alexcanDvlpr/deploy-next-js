@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Tutorial
+
+I have use this YouTube video to learn how to use **Github Actions** and deploy that in **Github Pages**
+
+[![Tutorial Deploy NextJs](https://img.youtube.com/vi/yRz8D_oJMWQ/0.jpg)](https://www.youtube.com/watch?v=yRz8D_oJMWQ)
+
+This project is deployed in [this URL](https://alexcandvlpr.github.io/deploy-next-js/)
+
 ## Getting Started
 
 First, run the development server:
