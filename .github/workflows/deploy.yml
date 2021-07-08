@@ -21,14 +21,15 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install Project Packages
+    - name: Install Project Packages 💿
       run: npm ci
-    - name: Build my App
+    - name: Build my App ⛏️
       run: npm run build
       env:
         PRUEBA_ENV: Hola Mundo
 
-    - run: npm run export
+    - name: Exportar el artefacto 📦
+      run: npm run export
       env:
         PRUEBA_ENV: Hola Mundo
 
